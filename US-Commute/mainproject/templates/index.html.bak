@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% load static %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>The US Communte</title>
+		<link href="{% static 'static/style.css' %}" rel="stylesheet" type="text/css" />
+		
+	</head>
+	<body>
+		<h1>The US Communte</h1>
+		<h2>New Jersey</h2>
+		<input type="text" placeholder="Search State">
+		
+		<p id="timeTitle">Time is:</p>
+		<p id="timeBlock">
+		{{ date }}
+		</p>
+		
+		<p id="weatherTitle">Weather in {{weatherLoc}}:</p>
+		<p id="weatherBlock">
+		Temp: {{ weatherTemp }}
+		<br>
+		Feels Like {{ weatherFeel}}
+		<br>
+		Humidity: {{ weatherHum }}
+		<br>
+		Description: {{ weatherDesc }}
+		</p>
+		
+		<p id="timeTitle">News is:</p>
+		{{ news1Src }}<a id="newsBlock1" href={{ news1Link }}>{{ news1Title }} </a>
+		<br>
+		{{ news2Src }}<a id="newsBlock2" href={{ news2Link }}>{{ news2Title }} </a>
+		<br>
+		{{ news3Src }}<a id="newsBlock3" href={{ news3Link }}>{{ news3Title }} </a>
+		
+		<script src="{% static 'static/script.js' %}"></script>  
+	</body>
+</html>

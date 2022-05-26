@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>THE US COMMUTE</title>
+	
+	<style>
+	body{
+		background-color: #ebebeb;
+		text-align: center;
+		font-family: 'Trebuchet MS', sans-serif;
+	}
+	h1{
+	  color: black;
+	  text-align:center;
+	}
+
+	h2{
+	  text-align:center;
+	  font-family:monospace;
+	  font-size:24px;
+	}
+
+	img{
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 500%;
+	  height:500%;
+	  float:center;
+	  border: 3px #de3131 solid;
+	  border-radius: 20px;
+	  
+	}
+	.dropbtn {
+	  background-color: white;
+	  color: black;
+	  padding: 16px;
+	  font-size: 16px;
+	  border: 2px #de3131 solid;
+	  border-radius: 10px;
+	}
+	#selector{
+		text-align: center;
+		height:55px;
+		font-size: 16px;
+		border: 2px #de3131 solid;
+		border-radius: 10px;
+	}
+	option{
+		background-color: white;
+		font-size: 12px;
+	}
+	</style>
+</head>
+<body>
+    <h1>THE US COMMUTE</h1>
+	<img class="rotate" src="https://media.timeout.com/images/105483067/1024/768/image.jpg" style= "width:400px">
+	<img class="rotate" src="https://media.timeout.com/images/105483061/1024/768/image.jpg" style="width:400px">
+	<img class="rotate" src="https://media.timeout.com/images/105483068/1024/768/image.jpg" style="width:400px">
+	<img class="rotate" src="https://media.timeout.com/images/105483066/1024/768/image.jpg" style="width:400px">
+	<img class="rotate" src="https://media.timeout.com/images/105483070/1024/768/image.jpg" style="width:400px">
+	<img class="rotate" src="https://media.timeout.com/images/105483073/1024/768/image.jpg" style="width:400px">
+	<img class="rotate" src="https://media.timeout.com/images/105483072/1024/768/image.jpg" style="width:400px">
+	<img class="rotate" src="https://media.timeout.com/images/105858606/1024/768/image.jpg" style="width:400px">
+	<img class="rotate" src="https://media.timeout.com/images/105483062/1024/768/image.jpg" style="width:400px">
+	<img class="rotate" src="https://media.timeout.com/images/105483069/1024/768/image.jpg" style="width:400px">
+	<img class="rotate" src="https://media.timeout.com/images/105483074/1024/768/image.jpg" style="width:400px">
+	<img class="rotate" src="https://media.timeout.com/images/105483063/1024/768/image.jpg" style="width:400px">
+	<img class="rotate" src="https://media.timeout.com/images/105483064/1024/768/image.jpg" style="width:400px">
+	<br>
+    <h2>All your U.S. traveling information, All in one website!</h2>
+	<br>
+    <div class="dropdown">
+		<select id="selector">
+			<option value="">Pick State</option>
+			<option value="/Alabama">Alabama</option>
+			<option value="/Alaska">Alaska</option>
+			<option value="/Arizona">Arizona</option>
+			<option value="/Arkansas">Arkansas</option>
+			<option value="/California">California</option>
+			<option value="/Colorado">Colorado</option>
+			<option value="/Connecticut">Connecticut</option>
+			<option value="/Delaware">Delaware</option>
+			<option value="/Florida">Florida</option>
+			<option value="/Georgia">Georgia</option>
+			<option value="/Hawaii">Hawaii</option>
+			<option value="/Idaho">Idaho</option>
+			<option value="/Illinois">Illinois</option>
+			<option value="/Indiana">Indiana</option>
+			<option value="/Iowa">Iowa</option>
+			<option value="/Kansas">Kansas</option>
+			<option value="/Kentucky">Kentucky</option>
+			<option value="/Louisiana">Louisiana</option>
+			<option value="/Maine">Maine</option>
+			<option value="/Maryland">Maryland</option>
+			<option value="/Massachusetts">Massachusetts</option>
+			<option value="/Michigan">Michigan</option>
+			<option value="/Minnesota">Minnesota</option>
+			<option value="/Mississippi">Mississippi</option>
+			<option value="/Missouri">Missouri</option>
+			<option value="/Montana">Montana</option>
+			<option value="/Nebraska">Nebraska</option>
+			<option value="/Nevada">Nevada</option>
+			<option value="/NewHampshire">New Hampshire</option>
+			<option value="/NewJersey">New Jersey</option>
+			<option value="/NewMexico">New Mexico</option>
+			<option value="/NewYork">New York</option>
+			<option value="/NorthCarolina">North Carolina</option>
+			<option value="/NorthDakota">North Dakota</option>
+			<option value="/Ohio">Ohio</option>
+			<option value="/Oklahoma">Oklahoma</option>
+			<option value="/Oregon">Oregon</option>
+			<option value="/Pennsylvania">Pennsylvania</option>
+			<option value="/RhodeIsland">Rhode Island</option>
+			<option value="/SouthCarolina">South Carolina</option>
+			<option value="/SouthDakota">South Dakota</option>
+			<option value="/Tennessee">Tennessee</option>
+			<option value="/Texas">Texas</option>
+			<option value="/Utah">Utah</option>
+			<option value="/Vermont">Vermont</option>
+			<option value="/Virginia">Virginia</option>
+			<option value="/Washington">Washington</option>
+			<option value="/West Virginia">West Virginia</option>
+			<option value="/Wisconsin">Wisconsin</option>
+			<option value="/Wyoming">Wyoming</option>
+		</select>
+		<button class="dropbtn" onclick="switchPage()">Select State</button>
+	</div>
+	<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("rotate");
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	  }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}    
+	  x[myIndex-1].style.display = "block";  
+	  setTimeout(carousel, 2500); 
+	}
+	
+	function switchPage(){
+		var state = document.getElementById("selector");
+		var picked = state.options[state.selectedIndex].value;
+		window.location.replace(picked);
+	}
+	</script>
+</body>

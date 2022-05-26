@@ -1,0 +1,50 @@
+Alabama 4,949,697 Montgomery
+Alaska 720,763 Juneau
+Arizona	7,640,796 Phoenix
+Arkansas 3,042,017 Little Rock
+California 39,664,128 Sacramento
+Colorado 5,961,083 Denver
+Connecticut 3,546,588 Hartford
+Delaware 998,619 Dover
+Florida 22,177,997 Tallahassee
+Georgia 10,936,299 Atlanta
+Hawaii 1,401,709 Honolulu
+Idaho 1,896,652	Boise
+Illionois 12,518,071 Springfield
+Indiana 6,842,385 Indianapolis
+Iowa 3,174,426 Des Moines
+Kansas 2,919,179 Topeka
+Kentucky  4,487,233 Frankfort
+Louisiana  4,616,106 Baton Rouge
+Maine 1,359,677 Augusta
+Maryland 6,075,314 Annapolis
+Massachusetts 6,922,107 Boston
+Michigan 9,995,212 Lansing
+Minnesota 5,739,781 Saint Paul
+Mississippi 2,961,536 Jackson
+Missouri 6,184,843 Jefferson City
+Montana	1,093,117 Helena
+Nebraska 1,960,790 Lincoln
+Nevada 3,238,601 Carson City
+New Hampshire 1,378,449 Concord
+New Jersey 8,870,685 Trenton
+New Mexico 2,109,093 Santa Fe
+New York 19,223,191 Albany
+North Carolina 10,807,491 Raleigh
+North Dakota 774,008 Bismarck
+Ohio 11,727,377 Chillicothe
+Oklahoma 4,007,179 Oklahoma City
+Oregon 4,325,290 Salem
+Pennsylvania 12,805,190 Harrisburg
+Rhode Island 1,062,583 Providence
+South Carolina 5,342,388 Columbia
+South Dakota 902,542 Pierre
+Tennessee 7,001,803 Nashville
+Texas 30,097,526 Austin
+Utah 3,363,182 Salt Lake City
+Vermont 622,882 Montpelier
+Virginia 8,638,218 Richmond
+Washington 7,887,965 Olympia
+West Virginia 1,755,715 Charleston
+Wisconsin 5,867,518 Madison
+Wyoming 582,233	Cheyenne
